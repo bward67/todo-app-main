@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="title-container">
+        <h1>Todo</h1>
+        <div class="moon-sun-container">
+          <img src="images/icon-moon.svg" alt="" class="moon" />
+        </div>
+      </div>
+      <div class="input-container">
+        <div class="checkbox-not">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9">
+            <path
+              fill="none"
+              stroke="none"
+              stroke-width="2"
+              d="M1 4.304L3.696 7l6-6"
+            />
+          </svg>
+        </div>
+        <form name="form">
+          <input type="text" placeholder="Create a new todo..." />
+        </form>
+      </div>
+
+      <div class="main-list-container">
+        <div class="dynamic-todo-container">
+          <!--We will add these dynamically in JS
+           
+           <div class="list-container">
+            <div class="list-left">
+              <div class="checkbox-container">
+                <img src="images/icon-check-dark-theme.svg" alt="" class="checkbox checkbox-dark"/>
+                <img src="images/icon-check.svg" alt="" class="checkbox checkbox-light"/>
+              </div>
+              <p>Complete online JavaScript course</p>
+            </div>
+            <div >
+              <img src="images/icon-cross.svg" alt="" class="delete-x" />
+            </div>
+          </div>-->
+        </div>
+
+        <div class="list-container-bottom-line">
+          <p class="items-left"></p>
+          <p class="clear-completed">Clear Completed</p>
+          <div class="mobile-spacer"></div>
+          <div class="all-active-completed-container">
+            <p class="all">All</p>
+            <p class="active">Active</p>
+            <p class="completed">Completed</p>
+          </div>
+        </div>
+      </div>
+
+      <footer><p>Drag and drop to reorder list</p></footer>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>
